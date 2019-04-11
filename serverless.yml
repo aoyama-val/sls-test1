@@ -16,3 +16,8 @@ functions:
     timeout: 10
     environment: # 環境変数
       HOGE: 12345678
+      MYSQL_HOST: ${self:custom.MYSQL_HOST.${self:provider.stage}}  # dev, prodによって値を切り替える
+custom:
+  MYSQL_HOST:
+    dev: dev.example.com
+    prod: prod.example.com
