@@ -1,8 +1,9 @@
 service: sls-test1
 provider:
   name: aws
-  runtime: nodejs8.10
   region: ap-northeast-1
 functions:
+  # sls-test1-dev-hello という関数名になる
   hello:
     handler: index.handler
+    runtime: nodejs8.10

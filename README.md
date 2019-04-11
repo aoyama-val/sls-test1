@@ -21,7 +21,7 @@ sls deploy function -f hello --stage dev
 デプロイした関数を実行
 
 ```
-sls invoke -f hello -p event.json --stage dev
+sls invoke -f hello -p event.json --stage dev --log
 ```
 
 ローカルで関数実行
