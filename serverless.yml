@@ -1,3 +1,4 @@
+# https://serverless.com/framework/docs/providers/aws/guide/serverless.yml/
 service: sls-test1
 provider:
   name: aws
@@ -7,3 +8,11 @@ functions:
   hello:
     handler: index.handler
     runtime: nodejs8.10
+  hello2:
+    handler: index2.handler
+    description: あいうえお
+    runtime: nodejs8.10
+    memorySize: 512
+    timeout: 10
+    environment: # 環境変数
+      HOGE: 12345678
