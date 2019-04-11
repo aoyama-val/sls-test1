@@ -6,10 +6,10 @@ provider:
 functions:
   # sls-test1-dev-hello という関数名になる
   hello:
-    handler: index.handler
+    handler: hello/index.handler
     runtime: nodejs8.10
   hello2:
-    handler: index2.handler
+    handler: hello2/index.handler
     description: あいうえお
     runtime: nodejs8.10
     memorySize: 512
